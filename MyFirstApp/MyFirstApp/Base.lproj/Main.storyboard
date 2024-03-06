@@ -198,6 +198,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Log In "/>
                                                 <connections>
                                                     <action selector="LogIn:" destination="L3V-Fc-539" eventType="touchUpInside" id="Sa1-S9-bN1"/>
+                                                    <segue destination="OK9-XY-6YK" kind="show" id="uJe-Jb-ZHq"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -238,7 +239,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZX-uR-nnw">
-                                <rect key="frame" x="0.0" y="103" width="240" height="715"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="gu7-0C-crn">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="3200"/>
@@ -297,23 +298,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32C-OL-iEL">
                                                 <rect key="frame" x="0.0" y="1200" width="240" height="400"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="X6 Comp" translatesAutoresizingMaskIntoConstraints="NO" id="WLu-k9-4xy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="400"/>
-                                                    </imageView>
-                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="WLu-k9-4xy" firstAttribute="top" secondItem="32C-OL-iEL" secondAttribute="top" id="0nP-BC-g2U"/>
-                                                    <constraint firstAttribute="bottom" secondItem="WLu-k9-4xy" secondAttribute="bottom" constant="247" id="3TI-qw-wG0"/>
-                                                    <constraint firstAttribute="bottom" secondItem="WLu-k9-4xy" secondAttribute="bottom" id="DzO-Rk-r7c"/>
-                                                    <constraint firstItem="WLu-k9-4xy" firstAttribute="top" secondItem="32C-OL-iEL" secondAttribute="top" id="MXv-g7-Hao"/>
-                                                    <constraint firstItem="WLu-k9-4xy" firstAttribute="leading" secondItem="32C-OL-iEL" secondAttribute="leading" id="XYI-Iu-Vm2"/>
-                                                    <constraint firstAttribute="trailing" secondItem="WLu-k9-4xy" secondAttribute="trailing" id="ZXD-GV-Kzl"/>
-                                                    <constraint firstItem="WLu-k9-4xy" firstAttribute="leading" secondItem="32C-OL-iEL" secondAttribute="leading" id="bun-bn-bgQ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="WLu-k9-4xy" secondAttribute="bottom" id="sD2-q8-1JO"/>
-                                                    <constraint firstAttribute="trailing" secondItem="WLu-k9-4xy" secondAttribute="trailing" id="ywz-Ik-6o3"/>
-                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJR-DZ-ZtA">
                                                 <rect key="frame" x="0.0" y="1600" width="240" height="400"/>
@@ -364,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y90-Cq-d6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="408" y="1063"/>
+            <point key="canvasLocation" x="331" y="1063"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="raD-WH-nfO">
@@ -501,31 +486,31 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
